@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "e35153e9-623e-48ae-a50d-7839b70ce8b6",
+		"name": "theFluentMe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21899124"
+	},
+	"item": [
+		{
+			"name": "Traz todas as linguagens possíveis.",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-RapidAPI-Key",
+						"value": "6a7702cf88msh519530f65a7789cp1162b6jsnb72446800851",
+						"type": "text"
+					},
+					{
+						"key": "X-RapidAPI-Host",
+						"value": "thefluentme.p.rapidapi.com",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://thefluentme.p.rapidapi.com/language",
+					"protocol": "https",
+					"host": [
+						"thefluentme",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"language"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Traz o som com a linguagem escolhida no body.",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-RapidAPI-Key",
+						"value": "6a7702cf88msh519530f65a7789cp1162b6jsnb72446800851",
+						"type": "text"
+					},
+					{
+						"key": "X-RapidAPI-Host",
+						"value": "thefluentme.p.rapidapi.com",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"post_language_id\": \"15\",\r\n    \"post_title\": \"Dumbledore frase\",\r\n    \"post_content\": \"But as you know, happiness can be found even in the darkest hours, if only one remembers to turn on the light..\"\r\n}"
+				},
+				"url": {
+					"raw": "https://thefluentme.p.rapidapi.com/post",
+					"protocol": "https",
+					"host": [
+						"thefluentme",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualiza a linguagem escolhida",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-RapidAPI-Key",
+						"value": "6a7702cf88msh519530f65a7789cp1162b6jsnb72446800851",
+						"type": "text"
+					},
+					{
+						"key": "X-RapidAPI-Host",
+						"value": "thefluentme.p.rapidapi.com",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"post_language_id\": \"23\",\r\n    \"post_title\": \"My updated post title\",\r\n    \"post_content\": \"This is an updated example post. The post can be between three and 1000 characters long. It is best to avoid special characters although they are allowed.\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "https://thefluentme.p.rapidapi.com/post/P09421719",
+					"protocol": "https",
+					"host": [
+						"thefluentme",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"post",
+						"P09421719"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta todos os posts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-RapidAPI-Key",
+						"value": "6a7702cf88msh519530f65a7789cp1162b6jsnb72446800851",
+						"type": "text"
+					},
+					{
+						"key": "X-RapidAPI-Host",
+						"value": "thefluentme.p.rapidapi.com",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://thefluentme.p.rapidapi.com/post",
+					"protocol": "https",
+					"host": [
+						"thefluentme",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Post",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-RapidAPI-Key",
+						"value": "6a7702cf88msh519530f65a7789cp1162b6jsnb72446800851",
+						"type": "text"
+					},
+					{
+						"key": "X-RapidAPI-Host",
+						"value": "thefluentme.p.rapidapi.com",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://thefluentme.p.rapidapi.com/post/P09161718",
+					"protocol": "https",
+					"host": [
+						"thefluentme",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"post",
+						"P09161718"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
